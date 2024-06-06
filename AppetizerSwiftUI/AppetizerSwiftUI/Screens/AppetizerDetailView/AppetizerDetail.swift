@@ -10,6 +10,7 @@ import SwiftUI
 struct AppetizerDetail: View {
     let appetizer:Appetizer
     @Binding var isShowingDetail: Bool
+    @EnvironmentObject var order: Order
     
     var body: some View {
         ZStack{
@@ -44,7 +45,15 @@ struct AppetizerDetail: View {
             }
             .padding(.top, 20)
             Spacer()
-                APButton(label: "$\(appetizer.price,specifier: "%.2f") -  Add To Order")
+                
+                Button{
+                    order.add(appetizer)
+                    self.isShowingDetail = false
+                    print(order.items.count)
+                }
+                label:{
+                APButton(label: "$\(appetizer.price,specifier: "%.2f") -  Add To Order")}
+                
             .padding(.bottom,30)
         }
         }
@@ -63,10 +72,6 @@ struct AppetizerDetail: View {
         
         
         
-        
-    }
-    
-    func signIn(){
         
     }
 }

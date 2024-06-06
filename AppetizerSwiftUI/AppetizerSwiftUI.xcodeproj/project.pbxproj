@@ -23,7 +23,6 @@
 		D2F554872C10AE1300CE0B94 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F554862C10AE1300CE0B94 /* LoadingView.swift */; };
 		D2F554892C10AEC500CE0B94 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F554882C10AEC500CE0B94 /* Color+Ext.swift */; };
 		D2F554942C10BF7400CE0B94 /* AppetizerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F554932C10BF7400CE0B94 /* AppetizerDetail.swift */; };
-		D2F554972C11D4B500CE0B94 /* AppetizerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F554962C11D4B500CE0B94 /* AppetizerDetailViewModel.swift */; };
 		D2F5549A2C11D4EC00CE0B94 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F554992C11D4EC00CE0B94 /* APButton.swift */; };
 		D2F5549C2C11D5E000CE0B94 /* DismissTopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F5549B2C11D5E000CE0B94 /* DismissTopButton.swift */; };
 		D2F554A02C11D78900CE0B94 /* NutritionFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F5549F2C11D78900CE0B94 /* NutritionFactsView.swift */; };
@@ -52,7 +51,6 @@
 		D2F554862C10AE1300CE0B94 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		D2F554882C10AEC500CE0B94 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		D2F554932C10BF7400CE0B94 /* AppetizerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetail.swift; sourceTree = "<group>"; };
-		D2F554962C11D4B500CE0B94 /* AppetizerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailViewModel.swift; sourceTree = "<group>"; };
 		D2F554992C11D4EC00CE0B94 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		D2F5549B2C11D5E000CE0B94 /* DismissTopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissTopButton.swift; sourceTree = "<group>"; };
 		D2F5549F2C11D78900CE0B94 /* NutritionFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFactsView.swift; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 			children = (
 				D2F554A32C11EA3100CE0B94 /* Extensions */,
 				D2F554982C11D4CF00CE0B94 /* Buttons */,
-				D2F554952C11D49500CE0B94 /* AppetizerDetailView */,
 				D2F5547B2C1062C100CE0B94 /* Model */,
 				D2F5548D2C10B77400CE0B94 /* Utilities */,
 				D2F554652C105B1B00CE0B94 /* AppetizerSwiftUIApp.swift */,
@@ -189,6 +186,7 @@
 		D2F554912C10B7B100CE0B94 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D2F554952C11D49500CE0B94 /* AppetizerDetailView */,
 				D2F5548A2C10B72000CE0B94 /* AppetizerListView */,
 				D2F5548C2C10B75A00CE0B94 /* AccountView */,
 				D2F5548B2C10B74F00CE0B94 /* OrderView */,
@@ -211,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				D2F554932C10BF7400CE0B94 /* AppetizerDetail.swift */,
-				D2F554962C11D4B500CE0B94 /* AppetizerDetailViewModel.swift */,
 				D2F5549F2C11D78900CE0B94 /* NutritionFactsView.swift */,
 			);
 			path = AppetizerDetailView;
@@ -316,7 +313,6 @@
 				D2F554872C10AE1300CE0B94 /* LoadingView.swift in Sources */,
 				D2F554A22C11E28200CE0B94 /* AccountViewModel.swift in Sources */,
 				D2F554762C105B8800CE0B94 /* OrderView.swift in Sources */,
-				D2F554972C11D4B500CE0B94 /* AppetizerDetailViewModel.swift in Sources */,
 				D2F5547F2C10957E00CE0B94 /* NetworkManager.swift in Sources */,
 				D2F554682C105B1B00CE0B94 /* AppetizersTabView.swift in Sources */,
 				D2F554852C10A86E00CE0B94 /* Alert.swift in Sources */,

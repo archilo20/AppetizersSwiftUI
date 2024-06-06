@@ -43,8 +43,8 @@ struct AccountView: View {
             Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
         }
         .onAppear(){
-            let user = viewModel.retriveUser()
-            print(user)
+            viewModel.retriveUser()
+            
         }
 
     }

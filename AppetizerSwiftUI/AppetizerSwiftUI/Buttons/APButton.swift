@@ -10,9 +10,7 @@ import SwiftUI
 struct APButton: View {
     let label:LocalizedStringKey
     var body: some View {
-        Button{
-           
-        }label:{
+
             Text(label)
                 .font(.title3)
                 .fontWeight(.semibold)
@@ -20,7 +18,7 @@ struct APButton: View {
                 .foregroundColor(.white)
                 .background(Color.brandPrimary)
                 .cornerRadius(10)
-        }
+        
     }
 }
 
