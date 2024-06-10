@@ -7,21 +7,44 @@
 
 import SwiftUI
 
+
+
+
 struct AccountView: View {
     @StateObject var viewModel = AccountViewModel()
+    @FocusState private var focusedField:FormTextField?
     
-
+    enum FormTextField {
+       case  givenName, lastName, birthDate, email
+      }
 
     var body: some View {
         NavigationView{
             Form{
                 Section(header: Text("Personal Info")) {
                     TextField("First Name", text: $viewModel.user.givenName)
+                        .focused($focusedField,equals: .givenName)
+                        .onSubmit {
+                            focusedField = .lastName
+                        }
+                        .submitLabel(.next)
+                        
                     TextField("Last Name", text: $viewModel.user.lastName)
+                        .focused($focusedField,equals: .lastName)
+                        .onSubmit {
+                            focusedField = .email
+                        }
+                        .submitLabel(.next)
                     TextField("Email ", text: $viewModel.user.email)
                         .keyboardType(.emailAddress)
-        
+                        .focused($focusedField,equals: .email)
+                        .onSubmit {
+                            focusedField = nil
+                        }
+                        .submitLabel(.continue)
+                    
                     DatePicker("Birthday", selection: $viewModel.user.birthdate, displayedComponents: [.date])
+                        .focused($focusedField,equals: .birthDate)
                     Button{
                         viewModel.validateChanges()
                             }label: {
@@ -35,8 +58,13 @@ struct AccountView: View {
                 }
                 .toggleStyle(SwitchToggleStyle(tint:(.brandPrimary)))
             }
+            .navigationTitle("📋 Account")
+            .toolbar{
+                ToolbarItemGroup(placement: .keyboard, content: {
+                    Button("Dissmiss"){focusedField = nil}
+                })
+            }
             
-                .navigationTitle("📋 Account")
         }
         .alert(item: $viewModel.alertItem){
             alertItem in
