@@ -31,6 +31,7 @@
 		D2F554AA2C11F01F00CE0B94 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F554A92C11F01F00CE0B94 /* User.swift */; };
 		D2F554AC2C120EBD00CE0B94 /* EmptyOrderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F554AB2C120EBD00CE0B94 /* EmptyOrderState.swift */; };
 		D2F554B02C12137E00CE0B94 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F554AF2C12137E00CE0B94 /* Order.swift */; };
+		D2F554B22C171E7D00CE0B94 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F554B12C171E7D00CE0B94 /* CustomModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		D2F554A92C11F01F00CE0B94 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D2F554AB2C120EBD00CE0B94 /* EmptyOrderState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyOrderState.swift; sourceTree = "<group>"; };
 		D2F554AF2C12137E00CE0B94 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		D2F554B12C171E7D00CE0B94 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 				D2F554862C10AE1300CE0B94 /* LoadingView.swift */,
 				D2F5547C2C1093AA00CE0B94 /* AppetizerListCell.swift */,
 				D2F554AB2C120EBD00CE0B94 /* EmptyOrderState.swift */,
+				D2F554B12C171E7D00CE0B94 /* CustomModifiers.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				D2F554AC2C120EBD00CE0B94 /* EmptyOrderState.swift in Sources */,
 				D2F554A52C11EA4500CE0B94 /* String+Ext.swift in Sources */,
 				D2F554B02C12137E00CE0B94 /* Order.swift in Sources */,
+				D2F554B22C171E7D00CE0B94 /* CustomModifiers.swift in Sources */,
 				D2F554782C105B8800CE0B94 /* AppetizerListView.swift in Sources */,
 				D2F554AA2C11F01F00CE0B94 /* User.swift in Sources */,
 			);

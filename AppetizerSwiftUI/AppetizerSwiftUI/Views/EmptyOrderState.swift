@@ -14,7 +14,7 @@ struct EmptyOrderState: View {
     var body: some View {
         ZStack{
             Color(.systemBackground)
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .ignoresSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack{
                 Image(imageName)
                     .resizable()

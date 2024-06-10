@@ -49,11 +49,13 @@ struct AppetizerDetail: View {
                 Button{
                     order.add(appetizer)
                     self.isShowingDetail = false
-                    print(order.items.count)
                 }
-                label:{
-                APButton(label: "$\(appetizer.price,specifier: "%.2f") -  Add To Order")}
-                
+            label:{
+                //                APButton(label: "$\(appetizer.price,specifier: "%.2f") -  Add To Order")
+                Text("$\(appetizer.price,specifier: "%.2f") -  Add To Order")
+            }
+            .buttonStyle(.bordered)
+            .modifier(customButtonStyle())
             .padding(.bottom,30)
         }
         }
