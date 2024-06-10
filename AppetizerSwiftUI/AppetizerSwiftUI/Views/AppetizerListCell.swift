@@ -11,10 +11,17 @@ struct AppetizerListCell: View {
     let appetizer:Appetizer
     var body: some View {
         HStack{
-          
-                    AsyncImage(url: URL(string: appetizer.imageURL),scale: 5)
-//            Image("appetizer")
-//                .resizable()
+
+            AsyncImage(url: URL(string: appetizer.imageURL)) { image in
+                image.resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 120,height: 90)
+                    .cornerRadius(8)
+            }placeholder: {
+                Image("appetizer").resizable().aspectRatio(contentMode: .fit).frame(width: 120,height: 90).cornerRadius(9)
+            }
+
+            
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 120, height: 90)
                 .cornerRadius(10)
